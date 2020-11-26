@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 		count_word(word);
 	}
 	
-	printf_word();
+	print_word();
 		 
 	fclose(fp);
 
