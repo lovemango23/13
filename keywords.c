@@ -1,10 +1,10 @@
-#definfe MAX_NAME 30
-#include <string.c>
+#define MAX_NAME 30
+#include <string.h>
 #include <stdio.h>
-strct keytab{
+struct keytab{
 	int nums;
 	char name[MAX_NAME];
-	};
+};
 	
 	struct keytab keywords[13]={
 		{0,"int"},
@@ -26,7 +26,7 @@ int count_word(char*word){
 	int i;
 	
 	for(i=0;i<13;i++)
-	{if (strncmp(keywords[i].name,word,strlen(keywords[i].name)==0)){
+	{if (strncmp(keywords[i].name,word,strlen(keywords[i].name))==0){
 		keywords[i].nums++;
 		break;
 		}
